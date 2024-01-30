@@ -42,7 +42,7 @@
 # tokens[i] is either an operator: "+", "-", "*", or "/", or an integer in the range [-200, 200].
 
 class Solution:
-    def evalRPN(self, tokens: List[str]) -> int:
+    def evalRPN(self, tokens) -> int:
         stack = []
         for token in tokens:
             if token not in "+-*/":
